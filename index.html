@@ -1,68 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HomeWork2_CSS3</title>
-  <style>
-    body{
-    background-color: blanchedalmond;
-}
-.Menu {
-    display: block;
-    background-color: rgb(58, 167, 58);
-    color: azure;
-    padding: 15px 20px;
-    justify-content: center;
-    display: flex;
-}
-
-.Menu a {
-    margin: 0 15px;
-    padding: 5px 15px;
-    text-decoration: navy;
-    color: white;
-    background-color: transparent;
-    font-size: large;
-    border-radius: 15px;
-    transition: background-color 0.9s, box-shadow 0.9s;
-}
-
-.menu a:hover {
-    background-color: #6e4e4e;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-img.centered {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;}
-
-.content {
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-}
-  </style>
-
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="style.css">
+	<script src = "js.js"></script>
 </head>
 <body>
-  <h1>Learning journey</h1>
-  <h2> Journey</h2>
-  <a href="#main">Skip to main content</a>
-  <div class="Menu">
-    <a href="">Trang chủ</a>
-    <a href="https://typhoonuniverse.github.io/FinalProjectHTML.github.io/"  target="_blank"> HTML </a>
-    <a href="https://typhoonuniverse.github.io/Lesson2_CSS3.github.io/"  target="_blank"> CSS</a>
-    <a href="https://www.w3schools.com/" target="_blank"> Refernce</a>
-    <img src="logo.png" width="2%" height="2%">
-  </div><br>
+	
+	<div id = "image">
+    <p>Hover over an image below to display here.</p>
+	</div>
+	
+	<img class = "preview" alt = "Team seven" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUEATVBgNVr7ri-sJMGwdrzd5QwDE9rZOEA&s" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" alt = "It's so cold" src = "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2023_11_22_638362929279006187_game-naruto_.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" src = "https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/167468/Originals/game%20naruto_hinh%201.jpg" alt = "Grow up" onmouseover = "upDate(this)" onmouseout = "unDo()">
 
-  <div class="content">
-    <img id="main" src="nui.jpg" alt="nui" height="60%" width="60%" class="centered"><br>
-    <a>When I went to university, I learned to study by myself, research by myself and take the initiative in seeking new knowledge. Although sometimes I faced pressure and failure, I always considered it as motivation to try harder every day. Thanks to the perseverance and support from teachers and friends, my learning process gradually became more effective and had a clearer direction. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt magnam omnis qui unde a saepe fuga dolore consequatur eaque eligendi aliquid voluptatibus voluptates, provident reprehenderit numquam vitae! Dolor, voluptas commodi?</a>
-  </div>
-
-
-  
 </body>
 </html>
